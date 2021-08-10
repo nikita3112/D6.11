@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% block content %}
+        <div class="container">
+            <h2 class="cards_head">Авторы:</h2>
+            <div class="cards_container">
+                {% for author in authors %}
+                    <div class="card">
+                        <div class="card_image">
+                            <img src="{{ author.photo.url }}" alt="" width="200" height="150">
+                        </div>
+                        <div class="card_desc">
+                            <h3>{{ author.full_name }}</h3>
+                            <p class="price">{{ author.country }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endblock content %}
+</body>
+</html>

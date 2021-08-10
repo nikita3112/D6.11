@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% block content %}
+        <div class="main_content">
+        <h1 class="main_header">Моя библиотека</h1>
+        <p class="main_text">Количество книг в библиотеке - {{ books.count }}</p>
+        </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <img src="{% static 'images/logo.png' %}" alt="" width="60" height="60">
+        </div>
+        <div class="header_links">
+            <a href="/" class="header_link">Home</a>
+            <a href="/books" class="header_link">Books</a>
+            <a href="/authors" class="header_link">Authors</a>
+            <a href="/add" class="header_link">Add</a>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
