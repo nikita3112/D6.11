@@ -6,4 +6,4 @@
 ____
 Клонировать репозиторий: `git clone https://github.com/nikita3112/D6.11`  
 Поднять сервер: `manage.py runserver`  
-Добваить кингу в разделе Add  
+Добавить кингу в разделе Add  
